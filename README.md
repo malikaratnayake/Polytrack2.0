@@ -10,7 +10,7 @@ Dependencies related to this code is provided in requirements-cpu.txt and requir
 
 ## Pre-trained weights for YOLOv4
 
-Pre-trained weights for YOLOv4 can be downloaded from [here](https://drive.google.com/drive/folders/1FbIh9ZAb5eV53zGvzFXdAHyblrfxmj6-?usp=sharing). 
+Pre-trained weights for YOLOv4 can be downloaded from [here](https://drive.google.com/drive/folders/15CIE3rDC6iisRPDsDGfj_mkTDZhVLPsl). 
 
 Rename the weights file to custom.weights and copy and paste it into the "data" folder of this repository.
 
