@@ -10,11 +10,11 @@ Dependencies related to this code is provided in requirements-cpu.txt and requir
 
 ## Pre-trained weights for YOLOv4
 
-Pre-trained weights for YOLOv4 can be downloaded from [here](https://drive.google.com/drive/folders/1gsgQYMkwWHf-M9wWDcl96tDdC3gRyXQF?usp=sharing). 
+Pre-trained weights for YOLOv4 can be downloaded from [here](https://drive.google.com/drive/folders/1-7-h1ohnKV6fAPCNMv6LPTJ23DMd9izh?usp=sharing). 
 
 Rename the weights file to custom.weights and copy and paste it into the "data" folder of this repository.
 
-Use the following commands to convert the darkflow weights to Tensorflow. The pre-trained weights were trained on honeybee and strawberry flower images. Please make sure "./data/classes/custom.name" file contains the correct names of the classes (i.e. honeybee and flower)
+Use the following commands to convert the darkflow weights to Tensorflow. The pre-trained weights were trained on honeybee and strawberry flower images. Please make sure "./data/classes/custom.name" file contains the correct names of the classes (i.e. honeybee, flower, hoverfly and moth)
  
 ```
 python save_model.py --weights ./data/custom.weights --output ./checkpoints/custom-416 --input_size 416 --model yolov4 
