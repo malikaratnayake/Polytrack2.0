@@ -37,9 +37,13 @@ __PT.POLYTRACK.PLOT_GRAPH           = False #Set TRUE to save the insect traject
 __PT.POLYTRACK.SIGHTING_TIMES       = False #Set TRUE to export a csv with insect sighting times
 
 
+# Low resolution mode related parameters (Change the frame height and width to original values to disable the Low resolution mode)
+__PT.POLYTRACK.LOWERES_FRAME_WIDTH = 852 #Frame width for the low resolution processing mode
+__PT.POLYTRACK.LOWERES_FRAME_HEIGHT = 480 # Frame height for the low resolution processing mode
 
-#Parameters related to changes in reolution(Low res to Hi res)
-__PT.POLYTRACK.LR_MODE     = False # Set TRUE to process the videos in low resolution when insects are not being tracked 
+
+#System defined parameters related to changes in resolution(Low res to Hi res)
+__PT.POLYTRACK.LR_MODE     = False # System defined parameter related to Low resolution mode (Initial value = False) 
 __PT.POLYTRACK.IDLE_OUT    = False # Set to default value FALSE
 __PT.POLYTRACK.BACKTRACK_FRAMES = 30 # Number of frames to go back when a new insect is detected while in the low resolution mode
 # (Backtrack frames option is used to provide the background subtractor with adaquate no. of frames to build a model of the background)
@@ -99,9 +103,7 @@ __PT.POLYTRACK.UPDATE_FLOWER_ANALYSIS = True #Update the flowers.csv with insect
 __PT.POLYTRACK.FLOWER_UPDATE_FREQUENCY =  1000 # Interval (frames) for updating the flower position
 __PT.POLYTRACK.FLOWER_MOVEMENT_THRESHOLD = 60 # Maximum distance a flower can move during the update interval. Flower detections beyond this threshold are considered as newly detected flowers.
 
-# Low resolution mode related parameters
-__PT.POLYTRACK.LOWERES_FRAME_WIDTH = 852 #Frame width for the low resolution processing mode
-__PT.POLYTRACK.LOWERES_FRAME_HEIGHT = 480 # Frame height for the low resolution processing mode
+
 
 # Deep Leraning (YOLOv4) related parameters
 __PT.POLYTRACK.TRACKING_INSECTS = ['honeybee', 'flower','hoverfly', 'moth'] #Class labels

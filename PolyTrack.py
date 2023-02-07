@@ -81,7 +81,7 @@ def main(_argv):
                 nframe += 1
                 
                 # if not flowers_recorded: flowers_recorded = record_flowers()
-                if (nframe % pt_cfg.POLYTRACK.FLOWER_UPDATE_FREQUENCY == 0): track_flowers(nframe, frame) #60
+                if (nframe % pt_cfg.POLYTRACK.FLOWER_UPDATE_FREQUENCY == 60): track_flowers(nframe, frame) #60
 
                 idle = check_idle(nframe, predicted_position)
                 insectsBS =  foreground_changes(frame, width, height, nframe, idle)

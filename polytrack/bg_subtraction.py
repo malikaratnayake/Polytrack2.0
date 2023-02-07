@@ -15,7 +15,7 @@ def Extract_cont(_frame,_idle):
         fgmask = fgbg_ld.apply(_frame)
         pt_cfg.POLYTRACK.LR_MODE = True
     else:
-        if pt_cfg.POLYTRACK.LR_MODE: pt_cfg.POLYTRACK.LR_MODE = reset_to_hires(pt_cfg.POLYTRACK.LR_MODE)
+        if pt_cfg.POLYTRACK.LR_MODE: pt_cfg.POLYTRACK.LR_MODE = reset_to_hires(pt_cfg.POLYTRACK.LR_MODE) #Reset the background subtractor
         
         fgmask = fgbg.apply(_frame)
         #global subtractor_age
