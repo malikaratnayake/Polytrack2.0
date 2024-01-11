@@ -1,5 +1,12 @@
 # Polytrack 2.0
 
+> ### This repository is archived
+> This repository is associated with the publication:
+> 
+>Ratnayake, M. N., Amarathunga, D. C., Zaman, A., Dyer, A. G., & Dorin, A. (2023). [Spatial monitoring and insect behavioural analysis using computer vision for precision pollination.](https://doi.org/10.1007/s11263-022-01715-4) International Journal of Computer Vision, 131(3), 591-606.
+> 
+>**This repository is no longer being updated. For the latest version of the software with ongoing support and frequent updates, please refer to the [Polytrack repository](https://github.com/malikaratnayake/Polytrack)**.
+
 ## Introduction
 
 Polytrack 2.0 is designed to track multiple species of insect pollinators in complex dynamic environments and to monitor their pollination behaviour. It uses a combination of foreground-background segmentation (KNN background subtractor) and deep learning-based detection (YOLOv4) for tracking. Polytrack is capable of indentifying and recording insect-flower interactions for pollination monitoring.  
